@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marks Statement</title>
+    <link rel="stylesheet" href="style/style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+</head>
+<body>
+    <div class="cont">
+        <h3 id="top">Sr.No <span id="top-head">0000000</span></h3>
+        <img src="assets/Untitled 1.png" alt="" id="qr">
+        <img src="assets/OIP.jpeg" alt="" id="log">
+
+        <h2>हिंदुस्तान कॉलेज ऑफ इंजीनियरिंग एंड टेक्नोलॉजी</h2>
+        <h2>Hindusthan College of Engineering and Technology</h2>
+        <h6>Associated with Technical and Paramedical Educational Council <br>
+            An Autonomous Institution Recognized by Government of India
+        </h6>
+        <div class="sec">
+            <h2>Annual Statement of Marks</h2>
+            <table id="candi" class="tab1">
+                <tr>
+                    <td colspan="2"><span id="small">Name of the candidate</span>
+                        <h3>(Candidate's Name)</h3>
+                    </td>
+                    <td>
+                        <span id="small">Course name with code</span>
+                        <h3>Diploma in Fire & Safety Management</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span id="small">RegNo:</span>
+                        <h3>(Registration Number)</h3>
+                    </td>
+                    <td>
+                        <span id="small">Enrollment No:</span>
+                        <h3>(Enrollment Number)</h3>
+                    </td>
+                    <td>
+                        <span id="small">Authorised Training course name</span>
+                        <h3>Authorised Training Center's name</h3>
+                    </td>
+                </tr>
+            </table><br>
+            <table id="mark" class="tab2">
+               <thead>
+                    <tr>
+                        <th colspan="2" rowspan="2">Subject <br>Name</th>
+                        <th rowspan="2">Max <br>Marks</th>
+                        <th colspan="3">Marks Obtained</th>
+                        <th rowspan="2">Total in <br>words</th>
+                    </tr>
+                    <tr>
+                        
+                        <th>Theory</th>
+                        <th>Practical</th>
+                        <th>Total</th>
+                        
+                    </tr>
+                </thead>
+                <tr>
+                    <td colspan="2">DFSO12-101 Data Structures and Algorithm</td>
+                    <td>100</td>
+                    <td><input type="number" class="theory" onchange="total(this)"></td>
+                    <td><input type="number" class="practical" onchange="total(this)"></td>
+                    <td><input type="number" class="total" readonly></td>
+                    <td>Zero Zero</td>
+                </tr>
+                <tr>
+                    <td colspan="2">DFSO12-102 Database Management Systems</td>
+                    <td>100</td>
+                    <td><input type="number" class="theory" onchange="total(this)"></td>
+                    <td><input type="number" class="practical" onchange="total(this)"></td>
+                    <td><input type="number" class="total" readonly></td>
+                    <td>Zero Zero</td>
+                </tr>
+                <tr>
+                    <td colspan="2">DFSO12-103 Operating System</td>
+                    <td>100</td>
+                    <td><input type="number" class="theory" onchange="total(this)"></td>
+                    <td><input type="number" class="practical" onchange="total(this)"></td>
+                    <td><input type="number" class="total" readonly></td>
+                    <td>Zero Zero</td>
+                </tr>
+                <tr>
+                    <td colspan="2">DFSO12-104 Cloud Computing</td>
+                    <td>100</td>
+                    <td><input type="number" class="theory" onchange="total(this)"></td>
+                    <td><input type="number" class="practical" onchange="total(this)"></td>
+                    <td><input type="number" class="total" readonly></td>
+                    <td>Zero Zero</td>
+                </tr>
+                <tr>
+                    <td colspan="2">DFSO12-105 Artificial Intelligence</td>
+                    <td>100</td>
+                    <td><input type="number" class="theory" onchange="total(this)"></td>
+                    <td><input type="number" class="practical" onchange="total(this)"></td>
+                    <td><input type="number" class="total" readonly></td>
+                    <td>Zero Zero</td>
+                </tr>
+                <tr>
+                    <td colspan="2">DFSO12-106 Practical I</td>
+                    <td>100</td>
+                    <td><input type="number" class="theory" onchange="total(this)"></td>
+                    <td><input type="number" class="practical" onchange="total(this)"></td>
+                    <td><input type="number" class="total" readonly></td>
+                    <td>Zero Zero</td>
+                </tr>
+                <tr>
+                    <td colspan="2">DFSO12-107 Practical II</td>
+                    <td>100</td>
+                    <td><input type="number" class="theory" onchange="total(this)"></td>
+                    <td><input type="number" class="practical" onchange="total(this)"></td>
+                    <td><input type="number" class="total" readonly></td>
+                    <td>Zero Zero</td>
+                </tr>
+                <tr>
+                    <td colspan="2">DFSO12-108 Practical III</td>
+                    <td>100</td>
+                    <td><input type="number" class="theory" onchange="total(this)"></td>
+                    <td><input type="number" class="practical" onchange="total(this)"></td>
+                    <td><input type="number" class="total" readonly></td>
+                    <td>Zero Zero</td>
+                </tr>
+                <tr>
+                    <td colspan="7">
+                        <span id="small">Grand Total</span> 
+                        <input type="number" id="result" style="width: 20%;"> <br>
+                        <span id="small">in Words</span>
+                        <span>Zero Hundred Zero Zero</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="3"><span id="small">Month and year of examination</span></th>
+                    <th><span id="small">No.of Subject Offered</span></th>
+                    <th><span id="small">Result</span></th>
+                    <th><span id="small">Percentage</span></th>
+                    <th><span id="small">Grade</span></th>
+                </tr>
+                <tr>
+                    <td colspan="3">May 2020</td>
+                    <td>T5+P3=8</td>
+                    <td> <input type="text" id="pass"></td>
+                    <td><input type="text" id="Percentage"></td>
+                    <td>(Grade)</td>
+                </tr>
+            </table><br>
+            
+            <h3 id="dat"> <span id="small">Date :</span>(Date of Result)</h3>
+    
+                <h3 id="sign">(Signature of Deputy <br>
+                Controller of Examination) <br>
+                <span id="small">Deputy Controller of Examination</span></h3>
+          
+            <h3 id="dec"><span id="small">Subject marked with * indicates Excemption</span></h3>
+           
+
+
+        </div>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
