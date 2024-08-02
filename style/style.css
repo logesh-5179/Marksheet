@@ -8,6 +8,8 @@ body, html {
 }
 input{
     border: none;
+    background:transparent;
+    
 }
 .cont {
     width: 750px;
@@ -38,7 +40,7 @@ input[type="number"] {
     border: none;
     text-align: center;
     font-weight: bold;
-    background-color: rgb(241, 237, 233);
+/*     background-color: rgb(241, 237, 233); */
     height: 30px;
 }
 input[type="text"]{
